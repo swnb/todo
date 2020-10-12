@@ -37,6 +37,8 @@ export function TodoItems({ items } = initItems(), action: Action) {
         item.text = action.text;
       }
       return { items };
+    default:
+      return { items };
   }
 }
 
